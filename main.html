@@ -15,17 +15,17 @@
 <header>
     <nav class="navbar navbar-expand-sm fixed-top">
         <ul class="navbar-nav">
-            <li  class="nav-iem"> <a class="nav-link" href="#"><span class="nav-header" ><h4>Главная</h4></span></a> </li>
-            <li class="nav-iem"> <a data-target="#portfolio" class="nav-link" href="#"><span class="nav-header"><h4>Портфолио</h4></span></a> </li>
-            <li class="nav-iem"> <a class="nav-link" href="#"><span class="nav-header"><h4>МАРАТ КОТДУСОВ</h4></span></a> </li>
-            <li class="nav-iem"> <a class="nav-link" href="#"><span class="nav-header"><h4>Отзывы</h4></span></a> </li>
-            <li class="nav-iem"> <a class="nav-link" href="#"><span class="nav-header"><h4>Цены</h4></span></a> </li>
+            <li  class="nav-iem"> <a data-target="#main" class="nav-link used" href="#"><span class="nav-header" ><h4>Главная</h4></span></a> </li>
+            <li class="nav-iem"> <a data-target="#portfolio" class="nav-link used" href="#"><span class="nav-header"><h4>Портфолио</h4></span></a> </li>
+            <li class="nav-iem"> <a class="nav-link"><span class="nav-header"><h4>МАРАТ КОТДУСОВ</h4></span></a> </li>
+            <li class="nav-iem"> <a data-target="#price" class="nav-link used" href="#"><span class="nav-header"><h4>Цены</h4></span></a> </li>
+            <li class="nav-iem"> <a class="nav-link used" href="#"><span class="nav-header"><h4>Отзывы</h4></span></a> </li>        
         </ul>
     </nav>
 </header>
-<div class="content">
-    <div class="main-img-div"><img alt="image" class="main-image" src="img/urist.png"></div>
-    <div class="adv-text" style="float: right; margin-top: 200px; margin-right: 3%; max-width: 27%;">
+<div class="content blocks">
+    <div class="main-img-div block" id="main"><img alt="image" class="main-image" src="img/urist.png"></div>
+    <div  class="adv-text" style="float: right; margin-top: 200px; margin-right: 3%; max-width: 27%;">
         <p>Профессиональная фотосъемка</p>
         <p>в РТ и соседних регионах</p>
         <button class="buyButton">Заказать фотосъемку</button>
@@ -45,63 +45,85 @@
     
     <div>
     <button data-target="#portfolio" style="margin-left: 50%;margin-bottom: 3%; align-content: center;" class="to-down-btn">
-        <img alt="dot" class="btn-dot" src="img/circle.png" style="max-width: 40%;margin-bottom: 70%;"> 
+        <img alt="dot" class="btn-dot" src="img/circle.png" style="max-width: 40%;margin-bottom: 150%;"> 
     </button>
     </div>
     
     <div style="text-align: center;color: #f6f6f6;">
-        <h1 id="portfolio">Примеры моих работ</h1>
-        <div class="row">
-  <div  class="column">
-    <img src="img/delete/wedding.jpg">
-    <img src="img/delete/rocks.jpg">
-    <img src="img/delete/falls2.jpg">
-    <img src="img/delete/paris.jpg">
-    <img src="img/delete/nature.jpg">
-    <img src="img/delete/mist.jpg">
-    <img src="img/delete/paris.jpg">
-  </div>
-  <div class="column">
-    <img src="img/delete/underwater.jpg">
-    <img src="img/delete/ocean.jpg">
-    <img src="img/delete/wedding.jpg">
-    <img src="img/delete/mountainskies.jpg">
-    <img src="img/delete/rocks.jpg">
-    <img src="img/delete/underwater.jpg">
-  </div>
-  <div class="column">
-    <img src="img/delete/wedding.jpg">
-    <img src="img/delete/rocks.jpg">
-    <img src="img/delete/falls2.jpg">
-    <img src="img/delete/paris.jpg">
-    <img src="img/delete/nature.jpg">
-    <img src="img/delete/mist.jpg">
-    <img src="img/delete/paris.jpg">
-  </div>
-  <div class="column">
-    <img src="img/delete/underwater.jpg">
-    <img src="img/delete/ocean.jpg">
-    <img src="img/delete/wedding.jpg">
-    <img src="img/delete/mountainskies.jpg">
-    <img src="img/delete/rocks.jpg">
-    <img src="img/delete/underwater.jpg">
-  </div>
+        <h1 id="portfolio">Мои работы</h1>
+        
+        <div class="tab">
+              <button id="defaultOpen" class="tablinks button type1" onclick="openCity(event, 'Wedding')">Свадебные фото</button>
+              <button class="tablinks button type1" onclick="openCity(event, 'Portrait')">Портретная съемка</button>
+              <button class="tablinks button type1" onclick="openCity(event, 'Family')">Семейные фотосессии</button>
+            </div>
+
+            <div id="Wedding" class="tabcontent">
+                <div class="row">
+              <div  class="column">
+                <img src="img/delete/wedding.jpg">
+                <img src="img/delete/rocks.jpg">
+                <img src="img/delete/falls2.jpg">
+                <img src="img/delete/paris.jpg">
+                <img src="img/delete/nature.jpg">
+                <img src="img/delete/mist.jpg">
+                <img src="img/delete/paris.jpg">
+              </div>
+              <div class="column">
+                <img src="img/delete/underwater.jpg">
+                <img src="img/delete/ocean.jpg">
+                <img src="img/delete/wedding.jpg">
+                <img src="img/delete/mountainskies.jpg">
+                <img src="img/delete/rocks.jpg">
+                <img src="img/delete/underwater.jpg">
+              </div>
+              <div class="column">
+                <img src="img/delete/wedding.jpg">
+                <img src="img/delete/rocks.jpg">
+                <img src="img/delete/falls2.jpg">
+                <img src="img/delete/paris.jpg">
+                <img src="img/delete/nature.jpg">
+                <img src="img/delete/mist.jpg">
+                <img src="img/delete/paris.jpg">
+              </div>
+              <div class="column">
+                <img src="img/delete/underwater.jpg">
+                <img src="img/delete/ocean.jpg">
+                <img src="img/delete/wedding.jpg">
+                <img src="img/delete/mountainskies.jpg">
+                <img src="img/delete/rocks.jpg">
+                <img src="img/delete/underwater.jpg">
+              </div>
+        </div>
+            </div>
+
+            <div id="Portrait" class="tabcontent">
+            </div>
+
+            <div id="Family" class="tabcontent">
+        </div> 
+
     </div>
     
-
+    <div style="margin-top: 3%;text-align: center;">
+        <h1 id="price" style="color: #f6f6f6">Цены</h1>
+        <div>
+            <div class="price-block">Gdsgdsgdsg</div>
+            <div class="price-block">Gdsgdsgdsg</div>
+            <div class="price-block">Gdsgdsgdsg</div>
+        </div>
     </div>
+    
 </div>
-<!-- Trigger/Open The Modal -->
 
-<!-- The Modal -->
 <div id="myModal" class="modal">
 
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
     <form class="form">
-  <h2>СВЯЗАТЬСЯ СО МНОЙ</h2>
-  <p type="Ваше имя:"><input placeholder="Напишите ваше имя здесь.."></input></p>
+  <h2>ОСТАВИТЬ ЗАЯВКУ</h2>
+  <p type="Ваше имя:"><input placeholder="Ваше имя.."></input></p>
   <p type="Почта:"><input placeholder="Дайте мне знать, как связаться с Вами.."></input></p>
   <p type="Сообщение:"><input placeholder="Ваше сообщение.."></input></p>
   <button>Отправить</button>
@@ -114,7 +136,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script src="js/scripts.js"></script>
 <script src="js/modal.js"></script>
+<script src="js/tabs.js"></script>
 </html>
