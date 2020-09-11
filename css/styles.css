@@ -3,7 +3,12 @@
   background: rgba(255, 255, 255, 0.0);
 }
 
+*{
+    list-style: none;
+}
+
 body{
+    text-decoration: none;
     margin: 0;
     font-family: DejaVu;
     background: rgb(22,26,30);
@@ -391,11 +396,115 @@ h4{
   visibility: visible;
   transform: scaleX(1);
 }
-.price-block {
+.pre-block {
     background-color: #f6f6f6;
     border-radius: 8px;
     max-width: 25%;
     color: #1d1d1f;
     display: inline-block;
-    margin: 3% auto;
+    
+}
+
+.price-container{
+  max-width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 40px;
+}
+
+.pricing-table{
+  background: #f1f1f1;
+  flex: 1;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+.pricing-header{
+  color: #f6f6f6;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.price{
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.price span{
+  font-size: 20px;
+}
+
+.title{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,50%);
+  width: 80%;
+  max-width: 360px;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.pricing-list{
+  padding: 10px 20px;
+}
+
+.pricing-list li{
+  margin: 8px 0;
+  font-size: 14px;
+  color: #344;
+  text-align: center;
+}
+
+.border{
+  width: 80px;
+  height: 1px;
+  background: #ddd;
+  margin: auto;
+}
+
+.pricing-table a{
+  display: block;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+  border: 1px solid;
+  max-width: 360px;
+  transition: .2s linear;
+}
+.pricing-table a:hover{
+  border-radius: 30px;
+}
+
+.table2 .pricing-header{
+  background: #13171b;
+}
+
+.table2 .title{
+  background-color: #06070d;
+}
+
+.table2 a{
+  color: #06070d;
+}
+
+.table2 a:hover{
+  background: #06070d;
+  color: #fff;
+}
+@media screen and (max-width:780px) {
+  .pricing-table{
+    flex: 100%;
+  }
+}
+.buy:hover {
+    cursor: pointer;
 }

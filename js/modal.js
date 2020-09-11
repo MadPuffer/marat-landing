@@ -1,10 +1,12 @@
 var modal = document.getElementById("myModal");
-var btn = document.querySelector(".buyButton");
+var btn = document.querySelectorAll(".buy");
 var span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function() {
-  modal.style.display = "block";
+btn.forEach(function(item){
+    item.onclick = function() {
+    modal.style.display = "block";
 }
+})
 
 span.onclick = function() {
   modal.style.display = "none";
