@@ -1,0 +1,223 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Marat Kotdusov</title>
+<meta name="description" content="Marat kotdusov's site">
+<meta name="author" content="BICompany">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/styles.css?v=1.0">
+<link rel="preload" href="/fonts/DejaVu.ttf" as="font">
+</head>
+
+<body>
+<header>
+    <nav class="navbar fixed-top navbar-expand-sm " style="width:100%;">
+        <div class="">
+        <ul class="navbar-nav">
+            <li  class="nav-iem"> <a data-target="#main" class="nav-link used" href="#"><span class="nav-header" ><h4>Главная</h4></span></a> </li>
+            <li class="nav-iem"> <a data-target="#portfolio" class="nav-link used" href="#"><span class="nav-header"><h4>Портфолио</h4></span></a> </li>
+            <li class="nav-iem"> <a class="nav-link"><span class="nav-header"><h4>МАРАТ КОТДУСОВ</h4></span></a> </li>
+            <li class="nav-iem"> <a data-target="#price" class="nav-link used" href="#"><span class="nav-header"><h4>Цены</h4></span></a> </li>
+            <li class="nav-iem"> <a data-target="#reviews" class="nav-link used" href="#"><span class="nav-header"><h4>Отзывы</h4></span></a> </li>
+        </ul>
+        </div>
+    </nav>
+</header>
+<div class="content">
+    <div class="main-img-div block" id="main"><img alt="image" class="main-image" src="img/urist.jpg"></div>
+    <div  class="adv-text" style="float: right; margin-top: 200px; margin-right: 3%; max-width: 27%;">
+        <p>Ваш Фотограф</p>
+        <button class="buyButton buy">Заказать фотосъемку</button>
+        <div style="float:none;margin-top:6%;">
+        <a data-toggle="popover" title="WhatsApp" data-placement="left" data-content="+7 939 395-99-53"
+           style="max-width: 10%;">
+            <i><img alt="phone" style="max-width: 8%;" src="img/call_icon.png"></i>
+        </a>
+        <a href="https://instagram.com/kotdusovmh?igshid=is2j3rtwthzj"
+           style="max-width: 10%;">
+            <i><img alt="instagram" style="max-width: 8%;" src="img/inst_icon.png"></i>
+        </a>
+        <a href="https://vk.com/id430021751" style="max-width: 10%;">
+            <i><img alt="vk" style="max-width: 8%;" src="img/vk_icon.png"></i>
+        </a>
+        </div>
+        
+    </div>
+    
+    <div>
+    <button data-target="#portfolio" style="margin-left: 50%;margin-bottom: 3%; align-content: center;" class="to-down-btn">
+        <img alt="dot" class="btn-dot" src="img/circle.png" style="max-width: 40%;margin-bottom: 150%;"> 
+    </button>
+    </div>
+    
+    <div style="text-align: center;color: #f6f6f6;">
+        <h1 id="portfolio">Мои работы</h1>
+        
+        <div class="tab">
+              <button id="defaultOpen" class="tablinks button type1" onclick="openCity(event, 'Portrait')">Портретная съемка</button>
+              <button class="tablinks button type1" onclick="openCity(event, 'Family')">Семейные фотосессии</button>
+              <button class="tablinks button type1" onclick="openCity(event, 'Individual')">Индивидуальные фото</button>
+            </div>
+
+
+            <div id="Portrait" class="tabcontent">
+                <div class="row">
+                    <div class="column">
+                        <img loading="lazy" src="img/portrait/12.jpg" alt="img">
+                        <img loading="lazy" src="img/portrait/2.jpg" alt="img">
+                        <img loading="lazy" src="img/portrait/8.jpg" alt="img">
+                        <img loading="lazy" src="img/portrait/9.jpg" alt="img">
+                    </div>
+                    <div class="column">
+                        <img loading="lazy" src="img/portrait/4.jpg" alt="img">
+                        <img loading="lazy" src="img/portrait/5.jpg" alt="img">
+                        <img loading="lazy" src="img/portrait/11.jpg" alt="img">
+                    </div>
+                    <div class="column">
+                        <img loading="lazy" src="img/portrait/7.jpg" alt="img">
+                        <img loading="lazy" src="img/portrait/3.jpg" alt="img">
+                        <img loading="lazy" src="img/portrait/13.jpg" alt="img">
+                    </div>
+                    <div class="column">
+                        <img loading="lazy" src="img/portrait/10.jpg" alt="img">
+                        <img loading="lazy" src="img/portrait/6.jpg" alt="img">
+                        <img loading="lazy" src="img/portrait/1.jpg" alt="img">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div id="Family" class="tabcontent">
+                <div class="row">
+                    <div class="column">
+                        
+                    </div>
+                    <div class="column">
+                        <img loading="lazy" src="img/family/1.jpg" alt="img">
+                        <img loading="lazy" src="img/family/2.jpg" alt="img">
+                    </div>
+                    <div class="column">
+                        <img loading="lazy" src="img/family/4.jpg" alt="img">
+                        <img loading="lazy" src="img/family/5.jpg" alt="img">
+                    </div>
+                    <div class="column">
+                    
+                    </div>
+                </div>
+        </div>
+        
+        <div id="Individual" class="tabcontent">
+            <div class="row">
+                <div class="column">
+                    <img loading="lazy" src="img/individual/1.jpg" alt="img">
+                    <img loading="lazy" src="img/individual/2.jpg" alt="img">
+                    <img loading="lazy" src="img/individual/4.jpg" alt="img">
+                    
+                </div>
+                <div class="column">
+                    <img loading="lazy" src="img/individual/5.jpg" alt="img">
+                    <img loading="lazy" src="img/individual/6.jpg" alt="img">
+                    <img loading="lazy" src="img/individual/7.jpg" alt="img">
+                </div>
+                <div class="column">
+                    <img loading="lazy" src="img/individual/8.jpg" alt="img">
+                    <img loading="lazy" src="img/individual/9.jpg" alt="img">
+                    <img loading="lazy" src="img/individual/10.jpg" alt="img">
+                </div>
+                <div class="column">
+                    <img loading="lazy" src="img/individual/11.jpg" alt="img">
+                    <img loading="lazy" src="img/individual/12.jpg" alt="img">
+                    <img loading="lazy" src="img/individual/13.jpg" alt="img">
+                </div>
+            </div>
+        
+        </div>
+
+    </div>
+    
+    <div style="margin-top: 3%;text-align: center;">
+        <h1 id="price" style="color: #f6f6f6">Цены</h1>
+        <div class="price-container">
+            
+            <div class="pricing-table table2">
+            <div class="pricing-header">
+              <div class="price">0<span>₽</span></div>
+              <div class="title">Портретная фотосессия</div>
+            </div>
+            <ul class="pricing-list">
+              <li><strong>N/A</strong> Часов съемки</li>
+              <div class="border"></div>
+              <li><strong>N/A</strong> Кадров</li>
+              <div class="border"></div>
+              <li><strong>N/A</strong> Дней обработки</li>
+            </ul>
+            <a class="buy" >Заказать сейчас</a>
+          </div>
+            
+            <div class="pricing-table table2">
+            <div class="pricing-header">
+              <div class="price">0<span>₽</span></div>
+              <div class="title">Семейная фотосессия</div>
+            </div>
+            <ul class="pricing-list">
+              <li><strong>N/A </strong> Часов съемки</li>
+              <div class="border"></div>
+              <li><strong>N/A</strong> Кадров</li>
+              <div class="border"></div>
+              <li><strong>N/A</strong> Дней обработки</li>
+            </ul>
+            <a class="buy" >Заказать сейчас</a>
+          </div>
+            
+            <div class="pricing-table table2">
+            <div class="pricing-header">
+              <div class="price">0<span>₽</span></div>
+              <div class="title">Индивидуальная фотосессия</div>
+            </div>
+            <ul class="pricing-list">
+              <li><strong>N/A </strong> Часов съемки</li>
+              <div class="border"></div>
+              <li><strong>N/A</strong> Кадров</li>
+              <div class="border"></div>
+              <li><strong>N/A</strong> Дней обработки</li>
+            </ul>
+            <a class="buy" >Заказать сейчас</a>
+          </div>
+
+    </div>
+    </div>
+    <div id="reviews" style="text-align: center;align-content: center;">
+        <h1 style="color: #f6f6f6;">Отзывы</h1>
+        <div class="review-img-bg">
+            <img alt="image" src="img/individual/14.jpg" style="height: 0px;float:left;">
+        </div>
+    </div>
+    
+</div>
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form class="form">
+  <h2>ОСТАВИТЬ ЗАЯВКУ</h2>
+  <p type="Ваше имя:"><input class="modal_name" placeholder="Ваше имя.."/></p>
+  <p type="Почта:"><input class="modal_email" placeholder="Дайте мне знать, как связаться с Вами.."/></p>
+  <p type="Сообщение:"><input class="modal_msg" placeholder="Ваше сообщение.."/></p>
+  <button id="modal_btn">Отправить</button>
+</form>
+  </div>
+
+</div>
+     
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/tabs.js"></script>
+</html>
